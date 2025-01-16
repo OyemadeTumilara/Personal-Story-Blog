@@ -6,7 +6,6 @@ This project is a personal story blog web application. It allows users to create
 
 - **index.js**: The main server file
 - **public**
-  - **images/**: Currently empty
   - **styles/**: Contains main.css
 - **views**
   - **partials/**: Contains footer.ejs and header.ejs
