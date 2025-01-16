@@ -1,0 +1,65 @@
+<%- include ("partials/header.ejs") %>
+
+<p>Enter a new post topic subject</p>
+<form action="/submit_form" method="post">
+    <label for="largeInput">Large Input:</label><br>
+    <textarea id="largeInput" name="largeInput" rows="10" cols="50"></textarea><br><br>
+    <input type="submit" value="Submit">
+    <button type="button" onclick="saveProgress()">Save</button>
+</form>
+
+<!-- <hr style ="background-color:black; border:none; height:1px; margin:0px;"> -->
+<hr style ="border: none; height: 5px; color: black; background-color: black; ">
+
+<p>Input FirstName and LastName</p>
+<form action="/submit" method="POST">
+    <input type="text" name="fName" placeholder="First name" />
+    <input type="text" name="lName" placeholder="Last name" />
+    <input type="submit" value="OK" />
+</form>
+
+<hr style ="border: none; height: 5px; color: black; background-color: black; ">
+
+<p>Input Password</p>
+<form action="/check" method="POST">
+    <label for="password">Password:</label>
+    <input type="text" id="password" name="password" required>
+    <input type="submit" value="Submit">
+</form>
+
+<hr style ="border: none; height: 5px; color: black; background-color: black; ">
+
+<p>Contact Me</p>
+<form>
+    <input name="name" type="text" class="feedback-input" placeholder="Name" />
+    <input name="email" type="text" class="feedback-input" placeholder="Email" />
+    <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+    <input type="submit" value="SUBMIT" />
+  </form>
+
+<hr style ="border: none; height: 5px; color: black; background-color: black; ">
+
+<p>Input street and pet names</p>
+<form action="/submit" method="POST">
+    <label for="street">Street Name:</label>
+    <input type="text" name="street" required>
+    <label for="pet">Pet Name:</label>
+    <input type="text" name="pet" required>
+    <input type="submit" value="Submit">
+</form>
+
+<hr style ="border: none; height: 5px; color: black; background-color: black; ">
+
+<p>Create a form on the home page for users to submit new posts.</p>
+
+<form action="/posts" method="POST">
+    <input type="text" name="title" placeholder="Title" required>
+    <textarea name="content" placeholder="Content" required></textarea>
+    <button type="submit">Create Post</button>
+  </form>
+  
+  
+  <hr style ="border: none; height: 5px; color: black; background-color: black; ">
+
+  <hr style ="border: none; height: 5px; color: black; background-color: black; ">
+<%- include ("partials/footer.ejs") %>
